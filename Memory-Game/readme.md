@@ -30,27 +30,5 @@ Create a simple memory game where players flip cards to find matching pairs. The
    - Use event listeners for card clicks and game reset.
 
 ## Concepts to Be Tested
-1. **DOM Manipulation**:
-   - Creating and updating elements dynamically.
-   - Handling user interactions with event listeners.
+DOM manipulation, event handling, array methods, loops, conditional statements, functions, CSS integration, responsive design, timers, state management, debugging, code organization, modularity, user interaction, animations, performance optimization.
 
-2. **JavaScript Logic**:
-   - Implementing game logic for matching pairs and tracking moves.
-   - Using arrays and loops to manage the game state.
-
-3. **CSS Styling**:
-   - Applying styles to create a visually appealing and responsive game.
-   - Using CSS transitions for smooth card flipping animations.
-
-4. **Responsive Design**:
-   - Ensuring the game works well on different screen sizes and devices.
-
-5. **Code Organization**:
-   - Writing clean, modular, and maintainable code.
-   - Using functions to encapsulate different parts of the game logic.
-
-6. **Debugging and Testing**:
-   - Identifying and fixing bugs in the game logic.
-   - Testing the game to ensure it works as expected.
-
-By following these specifications, you should be able to build a memory game in about an hour. This project will help you demonstrate your skills in JavaScript, DOM manipulation, and responsive design. Happy coding! 😊
