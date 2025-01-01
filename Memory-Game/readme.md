@@ -13,4 +13,4 @@
 - Provide a smooth user experience.
 
 # This is how your project will look like
-![Demo Page](image.png)
+<img src="image.png" alt="Demo Page" width="300" height="200">
