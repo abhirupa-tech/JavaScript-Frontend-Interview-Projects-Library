@@ -2,8 +2,11 @@
 
 Welcome to the JavaScript-Frontend-Interview-Projects-Library! This repository contains a collection of JavaScript frontend projects that are perfect for interview practice and skill enhancement.
 
+PS. I am using Tailwind CSS for all projects, to reduce effort in styling, and also make it look good at the same time
+
 ## Table of Contents
 - [Memory Game](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Memory-Game)
+- [To Do List]() - In Progress
 
 ## Upcoming Projects
 - A To-Do List

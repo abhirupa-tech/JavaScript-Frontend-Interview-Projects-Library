@@ -12,5 +12,5 @@
 - Ensure the game is responsive and visually appealing.
 - Provide a smooth user experience.
 
-# This is how your project will look like
-<img src="image.png" alt="Demo Page" width="300" height="200">
+## This is how your project will look like
+<img src="image.png" alt="Demo Page" height="400">
