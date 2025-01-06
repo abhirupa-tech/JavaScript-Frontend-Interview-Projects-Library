@@ -6,7 +6,8 @@ PS. I am using Tailwind CSS for all projects, to reduce effort in styling, and a
 
 ## Table of Contents
 - [Memory Game](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Memory-Game)
-- [To Do List]() - In Progress
+- [To Do Application](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/To-Do-App) - In Progress
+- [Dunamic Weather Application]() In Progress
 
 ## Upcoming Projects
 - A To-Do List

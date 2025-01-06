@@ -1,5 +1,7 @@
 import { Task, Priority } from './Task.js';
 
+/**Hard coded Tailwind Style List - feel free to copy or come up with your
+ * own style using the Tailwind Docu */
 const cellStyleCheckBoxCell = 'px-4 py-2 border-b w-[10%]';
 const cellStyleCheckBox = 'w-10 text-[#D2B48C] hover:cursor-pointer';
 const cellStyleTaskDescription = 'px-4 py-2 border-b w-[50%] text-left';
@@ -12,11 +14,6 @@ const pendingTasks = [
     Task.createTask("Complete your JavaScript Assignment", Priority.P1, '2025-01-10'), // Adding a Dummy Data
     Task.createTask("Build your Travel Itinerary", Priority.P0, '2025-01-10'), // Adding a Dummy Data
 ];
-
-const completedTasks = [
-    Task.createTask("LinkedIn Post on Creating a Github Repo of Frontend Projects", Priority.P1, '2025-01-10'), // Adding a Dummy Data
-];
-completedTasks[0].isCompleted = true;
 
 /** Util Function to Populate Tasks within the element */
 const buildTable = (table_id, tasks) => {
@@ -88,6 +85,7 @@ const addSingleTask = (task) => {
     buildTable("pending-tasks", [task]);
 }
 
+/** Style priority cell based on priority level */
 const stylePriorityCell = (cell, priority) => {
     switch(priority) {
         case Priority.P0:
@@ -114,6 +112,7 @@ const observer = new MutationObserver((mutations) => {
     });
 });
 
+/** Handle submit button click */
 const handleOnSubmitClick = () => {
     console.log("Submit Clicked");
     
@@ -126,6 +125,7 @@ const handleOnSubmitClick = () => {
     pendingTasks.push(newTask);
 }
 
+/** Initialize the app and set up event listeners */
 const init = () => {
     const taskInput = document.getElementById('task-input');
     const prioritySelect = document.getElementById('priority');

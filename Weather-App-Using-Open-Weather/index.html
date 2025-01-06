@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto p-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+            <!-- Row 1: Header -->
+            <div class="bg-blue-500 text-white p-4 text-left">
+                <h2 class="text-2xl font-bold">Storm with Heavy Rain</h2>
+            </div>
+
+            <!-- Row 2: Details -->
+            <div class="p-4">
+                <p class="text-gray-700">Temperature: 25°C</p>
+                <p class="text-gray-700">Humidity: 80%</p>
+                <p class="text-gray-700">Wind Speed: 15 km/h</p>
+            </div>
+
+            <!-- Row 3: Placeholder for additional content -->
+            <div class="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="p-4 bg-gray-100 rounded">
+                    <p class="text-gray-700">Date: 2025-01-06</p>
+                    <p class="text-gray-700">Temperature: 25°C</p>
+                    <p class="text-gray-700">Forecast: Sunny</p>
+                </div>
+                <div class="p-4 bg-gray-100 rounded">
+                    <p class="text-gray-700">Date: 2025-01-07</p>
+                    <p class="text-gray-700">Temperature: 22°C</p>
+                    <p class="text-gray-700">Forecast: Cloudy</p>
+                </div>
+                <div class="p-4 bg-gray-100 rounded">
+                    <p class="text-gray-700">Date: 2025-01-08</p>
+                    <p class="text-gray-700">Temperature: 20°C</p>
+                    <p class="text-gray-700">Forecast: Rainy</p>
+                </div>
+                <div class="p-4 bg-gray-100 rounded">
+                    <p class="text-gray-700">Date: 2025-01-09</p>
+                    <p class="text-gray-700">Temperature: 18°C</p>
+                    <p class="text-gray-700">Forecast: Stormy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
