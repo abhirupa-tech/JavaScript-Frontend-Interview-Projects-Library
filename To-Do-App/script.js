@@ -36,6 +36,7 @@ const buildTableCell = (cellContent) => {
     const checkboxCell = document.createElement('td');
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
+    observer.observe(checkbox, { attributes: true });
     checkbox.checked = cellContent.isCompleted;
     checkbox.onclick = function() { handleCheckboxClick(this); };
     checkbox.className = cellStyleCheckBox;
@@ -74,7 +75,7 @@ function handleCheckboxClick(checkbox) {
     const taskDescription = descriptionCell.textContent;
 
     // Find the task in pendingTasks or completedTasks
-    let task = pendingTasks.find(t => t.description === taskDescription) || completedTasks.find(t => t.description === taskDescription);
+    let task = pendingTasks.find(t => t.description === taskDescription) ;
 
     if (task) {
         task.isCompleted = checkbox.checked;
@@ -105,6 +106,7 @@ const stylePriorityCell = (cell, priority) => {
 /** MutationObserver to observe changes to checkbox attributes */
 const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
+        console.log("Mutation detected");
         if (mutation.type === 'attributes' && mutation.attributeName === 'checked') {
             const checkbox = mutation.target;
             handleCheckboxClick(checkbox);
@@ -118,7 +120,10 @@ const handleOnSubmitClick = () => {
     const taskDescription = document.getElementById('task-input').value;
     const priority = document.getElementById('priority').value;
     const dueDate = document.getElementById('due-date').value;
-    addSingleTask(Task.createTask(taskDescription, priority, dueDate));
+
+    const newTask = Task.createTask(taskDescription, priority, dueDate)
+    addSingleTask(newTask);
+    pendingTasks.push(newTask);
 }
 
 const init = () => {
