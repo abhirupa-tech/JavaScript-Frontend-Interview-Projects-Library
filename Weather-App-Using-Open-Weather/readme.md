@@ -1,4 +1,4 @@
-- **Title**: Weather Forecast Display
+## Weather Forecast Display using the OpenWeather Public API
 - **Description**: Responsive weather forecast display using Tailwind CSS.
 - **Features**:
   - Current weather conditions (storm, temperature, humidity, wind speed).
