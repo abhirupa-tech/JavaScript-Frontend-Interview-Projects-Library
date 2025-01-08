@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
+    <div class="flex items-center space-x-6">
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <p class="text-4xl font-mono">0</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <p class="text-4xl font-mono">0</p>
+        </div>
+        <div class="text-4xl font-mono">:</div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <p class="text-4xl font-mono">0</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+            <p class="text-4xl font-mono">0</p>
+        </div>
+    </div>
+    <div class="mt-6 flex justify-center">
+        <button id="toggleButton" class="bg-blue-500 text-white p-2 rounded-full focus:outline-none hover:shadow-lg m-2 hover:bg-blue-600">
+            <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />
+            </svg>
+              
+            <svg id="pauseIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />
+            </svg>              
+        </button>
+        <button id="refreshButton" class="bg-neutral-500 text-white p-2 rounded-full focus:outline-none hover:shadow-lg  hover:bg-neutral-700 m-2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>         
+        </button>
+    </div>
+
+    <div class="max-w-lg w-full mx-auto bg-white p-6 m-6 rounded-lg shadow-md">
+        <div class="flex space-x-4 mb-4">
+            <div class="flex-1">
+                <label for="minutes" class="block text-sm font-light text-center text-gray-700">MINUTES</label>
+                <input type="number" id="minutes" name="minutes" min="0" max="59" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="flex-1">
+                <label for="seconds" class="block text-sm font-light text-center text-gray-700">SECONDS</label>
+                <input type="number" id="seconds" name="seconds" min="0" max="59" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+            <div class="flex items-end">
+                <button type="button" class="px-4 py-2 bg-green-500 text-white font-semibold rounded-full shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Submit
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const playIcon = document.getElementById('playIcon');
+        const pauseIcon = document.getElementById('pauseIcon');
+
+        toggleButton.addEventListener('click', () => {
+            playIcon.classList.toggle('hidden');
+            pauseIcon.classList.toggle('hidden');
+        });
+    </script>
+    <script src="./script.js" type = "module"></script>
+</body>
+</html>
+

@@ -8,17 +8,18 @@
 </head>
 <body class="bg-gray-100 text-gray-800">
     <div class="container mx-auto p-4">
-        <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
+        <div id="weatherCard" class="max-w-4xl mx-auto bg-white rounded-lg shadow-md overflow-hidden">
             <!-- Row 1: Header -->
             <div class="bg-blue-500 text-white p-4 text-left">
-                <h2 class="text-2xl font-bold">Storm with Heavy Rain</h2>
+                <h2 id="weather-desc" class="text-2xl font-bold">Loading ...</h2>
+                <p id="location" class="text-sm font-light">Fetching Location ...</h2>
             </div>
 
             <!-- Row 2: Details -->
             <div class="p-4">
-                <p class="text-gray-700">Temperature: 25°C</p>
-                <p class="text-gray-700">Humidity: 80%</p>
-                <p class="text-gray-700">Wind Speed: 15 km/h</p>
+                <p id="temperature" class="text-gray-700">Temperature: 25°C</p>
+                <p id="humidity" class="text-gray-700">Humidity: 80%</p>
+                <p id="wind" class="text-gray-700">Wind Speed: 15 km/h</p>
             </div>
 
             <!-- Row 3: Placeholder for additional content -->

@@ -10,6 +10,18 @@ function fetchData() {
     }
 }
 
+function kelvinToCelsius(kelvin) { 
+  return kelvin - 273.15;
+}
+
+function mphToKmph(mph) {
+  return mph * 1.60934;
+}
+
+function truncateToOneDecimal(num) {
+  return Math.trunc(num * 10) / 10;
+}
+
 // Function to handle the position data
 function showPosition(position) {
   const latitude = position.coords.latitude;
@@ -24,14 +36,26 @@ function showPosition(position) {
     .then(data => {
       console.log(data);
       // Process the data here
-      const temperature = data.main.temp;
+      const temperature = kelvinToCelsius(data.main.temp);
+      const location = data.name;
       const weatherDescription = data.weather[0].description;
+      const humidity = data.main.humidity;
+      const wind = mphToKmph(data.wind.speed);
+      updateWeatherCard(temperature, location, weatherDescription, humidity, wind);
       console.log(`Temperature: ${temperature}`);
       console.log(`Weather: ${weatherDescription}`);
     })
     .catch(error => {
       console.error('Error fetching weather data:', error);
     });
+}
+
+const updateWeatherCard = (temperature, location, weatherDescription, humidity, wind) => {
+  document.getElementById('weather-desc').textContent = weatherDescription;
+  document.getElementById('location').textContent = location;
+  document.getElementById('temperature').textContent = "Temperature: " + truncateToOneDecimal(temperature) + "°C";
+  document.getElementById('humidity').textContent = "Humidity: "+ humidity + "%";
+  document.getElementById('wind').textContent = "Wind Speed: " + truncateToOneDecimal(wind) + " km/h";
 }
 
 // Function to handle errors
