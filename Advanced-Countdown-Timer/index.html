@@ -8,17 +8,17 @@
 </head>
 <body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen">
     <div class="flex items-center space-x-6">
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div id="minutes_1" class="bg-white p-6 rounded-lg shadow-lg text-center">
             <p class="text-4xl font-mono">0</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div id="minutes_0" class="bg-white p-6 rounded-lg shadow-lg text-center">
             <p class="text-4xl font-mono">0</p>
         </div>
         <div class="text-4xl font-mono">:</div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div id="seconds_1" class="bg-white p-6 rounded-lg shadow-lg text-center">
             <p class="text-4xl font-mono">0</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div id="seconds_0" class="bg-white p-6 rounded-lg shadow-lg text-center">
             <p class="text-4xl font-mono">0</p>
         </div>
     </div>
@@ -38,6 +38,7 @@
             </svg>         
         </button>
     </div>
+    
 
     <div class="max-w-lg w-full mx-auto bg-white p-6 m-6 rounded-lg shadow-md">
         <div class="flex space-x-4 mb-4">
@@ -50,23 +51,13 @@
                 <input type="number" id="seconds" name="seconds" min="0" max="59" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
             </div>
             <div class="flex items-end">
-                <button type="button" class="px-4 py-2 bg-green-500 text-white font-semibold rounded-full shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                <button type="button" id="submit" class="px-4 py-2 bg-green-500 text-white font-semibold rounded-full shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Submit
-                </button>
+                </button>                
             </div>
         </div>
     </div>
 
-    <script>
-        const toggleButton = document.getElementById('toggleButton');
-        const playIcon = document.getElementById('playIcon');
-        const pauseIcon = document.getElementById('pauseIcon');
-
-        toggleButton.addEventListener('click', () => {
-            playIcon.classList.toggle('hidden');
-            pauseIcon.classList.toggle('hidden');
-        });
-    </script>
     <script src="./script.js" type = "module"></script>
 </body>
 </html>

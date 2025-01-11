@@ -4,3 +4,6 @@
 3. **Reset**: Users can reset the timer to the initial set duration.
 4. **Notifications**: Display notifications when the timer reaches certain milestones (e.g., halfway, 10 seconds remaining).
 5. **Promises**: Use Promises to handle asynchronous operations like notifications.
+
+## This is how your project will look like
+![Demo Image](image.png)

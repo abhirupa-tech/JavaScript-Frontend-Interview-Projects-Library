@@ -6,16 +6,13 @@ PS. I am using Tailwind CSS for all projects, to reduce effort in styling, and a
 
 ## Table of Contents
 - [Memory Game](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Memory-Game)
-- [To Do Application](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/To-Do-App) - In Progress
-- [Dunamic Weather Application]() In Progress
+- [To Do Application](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/To-Do-App) 
+- [Dynamic Weather Application](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Weather-App-Using-Open-Weather) 
+- [Advanced Countdown Timer](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Advanced-Countdown-Timer) 
 
 ## Upcoming Projects
-- A To-Do List
-- Dynamic Weather Application (using a Public API)
-- Expense Tracker
-- Tic-tac-toe Game
-- A customized Pomodoro Timer
-- Hangman Game with Movies
+- Web Based Tamagotchi
+-
 
 
 
