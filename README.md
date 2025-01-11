@@ -12,7 +12,10 @@ PS. I am using Tailwind CSS for all projects, to reduce effort in styling, and a
 
 ## Upcoming Projects
 - Web Based Tamagotchi
--
+- Interactive Kanban Board
+
+## Have a Project Idea ? Create a Branch and Code it!
+
 
 
 
