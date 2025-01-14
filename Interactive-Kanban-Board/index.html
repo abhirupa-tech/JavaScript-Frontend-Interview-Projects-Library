@@ -30,33 +30,19 @@
         <!-- Ongoing Tasks -->
         <div id="ongoing" class="lane bg-neutral-100 rounded-lg shadow-lg border">
             <div class="bg-indigo-100 rounded-t-lg p-2 uppercase font-semibold text-md">Ongoing</div>
-            <div class="p-2">Ongoing</div>
         </div>
 
         <!-- Closed Tasks -->
         <div id="closed" class="lane bg-neutral-100 rounded-lg shadow-lg border">
             <div class="bg-indigo-100 rounded-t-lg p-2 uppercase font-semibold text-md">Closed</div>
-            <div class="p-2">Closed</div>
         </div>
         </div>
     </div>
 
     <!--Input Field-->
-    <div class="fixed bottom-0 left-0 w-full bg-white flex items-center p-4 border-t border-neutral-300">
+    <form id="task-form" class="fixed bottom-0 left-0 w-full bg-white flex items-center p-4 border-t border-neutral-300">
         <!--Text Field -->
-        <input type="text" id="task-input" class="required:border-red-500 flex-grow border-neutral-500 p-2 border rounded-3xl mr-4 px-6 py-2 focus:border-blue-500" placeholder="Add a Task">
-            
-        <!--Priority Selector-->      
-        <select id="priority" class="shadow border-neutral-500 p-2 border rounded-3xl mr-4 px-6 py-2 appearance-none w-[150px] text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
-            <option value="" disabled selected>Select priority</option>
-            <option value="URGENT">URGENT</option>
-            <option value="HIGH">HIGH</option>
-            <option value="MEDIUM">MEDIUM</option>
-            <option value="LOW">LOW</option>
-        </select>
-
-        <!--Calendar to Pick Due Date -->
-        <input type="date" id="due-date" class="required:border-red-500 shadow border-neutral-500 p-2 border rounded-3xl mr-4 px-6 py-2 appearance-none w-[180px] text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        <input type="text" id="task-desc" class="required:border-red-500 flex-grow border-neutral-500 p-2 border rounded-3xl mr-4 px-6 py-2 focus:border-blue-500" placeholder="Add a Task">
 
         <!--Submit Button-->
         <button id="submit-button" class="bg-zinc-100 text-white p-2 rounded-full hover:bg-stone-500 flex items-center justify-center w-10 h-10 disabled:opacity-75 disabled:hover:bg-zinc-100">                
@@ -64,7 +50,7 @@
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
             </svg>
         </button>
-    </div>
+    </form>
     
     <style>
         .submit-button:hover svg {
