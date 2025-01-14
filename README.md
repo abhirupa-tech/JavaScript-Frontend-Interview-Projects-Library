@@ -8,11 +8,18 @@ PS. I am using Tailwind CSS for all projects, to reduce effort in styling, and a
 - [Memory Game](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Memory-Game)
 - [To Do Application](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/To-Do-App) 
 - [Dynamic Weather Application](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Weather-App-Using-Open-Weather) 
-- [Advanced Countdown Timer](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Advanced-Countdown-Timer) 
+- [Advanced Countdown Timer](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Advanced-Countdown-Timer)
+- [Tamagotchi](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Tamagotchi) 
+- [Interactive-Kanban-Board](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Interactive-Kanban-Board) 
 
 ### Upcoming Projects
-- Web Based Tamagotchi
-- Interactive Kanban Board
+- Food Personality
+- Feed-a-fish
+- Custom Notification System
+- Typing Speed Test
+- Build your own Pasta
+- Guess the Place (Quiz Game)
+- Maze Runner
 <br/><br/><br/>
 ## Have a Project Idea ? Create a Branch and Code it!
 
