@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cute Pet Character</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/Observer.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-pink-200 to-blue-200">
+
+  <!-- Notification Box -->
+  <div id="notification" class="hidden fixed top-4 left-4 bg-white border border-gray-300 shadow-lg rounded-lg p-4 w-[300px]">
+    <p class="text-gray-800">This is a notification!</p>
+  </div>
+
+  <!-- Cute Pet Container -->
+  <div id="pet" class="relative w-40 h-40 bg-white rounded-full shadow-xl flex items-center justify-center">
+    <!-- Eyes -->
+    <div id="normal-eyes" class="absolute flex gap-6">
+      <!-- Left Eye -->
+      <div id="left-eye" class="relative w-8 h-8 bg-black rounded-full">
+        <div id="left-pupil" class="absolute w-4 h-4 bg-white rounded-full top-1 left-1"></div>
+      </div>
+      <!-- Right Eye -->
+      <div id="right-eye" class="relative w-8 h-8 bg-black rounded-full">
+        <div id="right-pupil" class="absolute w-4 h-4 bg-white rounded-full top-1 left-1"></div>
+      </div>
+    </div>
+
+    <div id="sleepy-eyes" class="hidden absolute flex gap-6">
+      <div id="left-eye" class="relative w-8 h-8">
+        <svg class="w-full h-full" viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2,8 Q16,16 30,8" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+      <!-- Right Eye -->
+      <div id="right-eye" class="relative w-8 h-8">
+        <svg class="w-full h-full" viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2,8 Q16,16 30,8" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </div>
+    </div>
+    
+
+    <!-- Smile -->
+    <div id="happy-face" class="absolute w-16 h-8 bg-gray-700 rounded-b-full top-28 flex justify-center items-center">
+      <div class="w-12 h-3 bg-gray-900 rounded-full transform"></div>
+    </div>
+    
+     <!-- Sad Face -->
+     <div id="angry-face" class="hidden absolute w-16 h-8 top-28 flex justify-center items-center hidden">
+      <svg class="w-full h-full" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,30 Q32,5 62,30" fill="none" stroke="#4b5563" stroke-width="4" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <!-- Sad Face -->
+    <div id="angry-face" class="hidden absolute w-16 h-8 top-28 flex justify-center items-center hidden">
+      <svg class="w-full h-full" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,30 Q32,5 62,30" fill="none" stroke="#4b5563" stroke-width="4" stroke-linecap="round" />
+      </svg>
+    </div>
+
+    <!--Tired-->
+    <div id="sleepy-face" class="hidden absolute w-16 h-8 top-28 flex justify-center items-center hidden">
+      <svg class="w-full h-full" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2,15 Q32,25 62,15" fill="none" stroke="#4b5563" stroke-width="4" stroke-linecap="round" />
+      </svg>
+    </div>
+
+  </div>  
+  
+  <div class="flex items-center w-[80%]">
+
+    <!-- Progress Bars -->
+    <div class="font-sans p-5 w-[60%]">
+        <div class="mb-4">
+          <label class="block font-semibold mb-2">Happiness</label>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div id="happy-bar" class="bg-pink-500 h-4 rounded-full" style="width: 0%;"></div>
+          </div>
+        </div>
+        <div class="mb-4">
+          <label class="block font-semibold mb-2">Hunger</label>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div id="hunger-bar" class="bg-yellow-500 h-4 rounded-full" style="width: 0%;"></div>
+          </div>
+        </div>
+        <div>
+          <label class="block font-semibold mb-2">Energy</label>
+          <div class="w-full bg-gray-200 rounded-full h-4">
+            <div id="energy-bar" class="bg-blue-500 h-4 rounded-full" style="width: 0%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="flex flex-col flex-grow items-center">
+          <button id="play-button" class="button bg-neutral-400 text-white mt-3 px-4 py-2 rounded-full hover:bg-neutral-600 hover:shadow-lg">Play with me</button>
+          <button id="feed-button" class="button bg-neutral-400 text-white mt-3 px-4 py-2 rounded-full hover:bg-neutral-600 hover:shadow-lg">Feed Me</button>
+          <button id="sleep-button" class="button bg-neutral-400 text-white mt-3  px-4 py-2 rounded-full hover:bg-neutral-600 hover:shadow-lg ">Put me to Sleep</button>
+      </div>          
+  </div>   
+
+  
+  <div class="font-sans p-5 border border-gray-300 w-[80%] shadow-lg my-4 bg-neutral-50 rounded-lg">
+    <h2 class="text-xl font-bold mb-4">How to Play with Your Virtual Tamagotchi</h2>
+    <ol class="list-decimal list-inside mb-4">
+      <li>Feed: Ensure your Tamagotchi is well-fed to keep its Hunger level low.</li>
+      <li>Play: Engage in fun activities to boost its Happiness.</li>
+      <li>Sleep: Allow your Tamagotchi to rest to maintain its Energy.</li>
+    </ol>
+  </div>
+
+  <script src="./script.js" type = "module"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen"> 
+
+
+    
+      
+
+
+</body>
+</html>
+
+
+

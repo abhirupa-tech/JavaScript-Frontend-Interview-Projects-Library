@@ -21,21 +21,5 @@ Build a basic virtual Tamagotchi using JavaScript, HTML, and TailwindCSS within 
 ## Tools
 - **CDNs**: TailwindCSS, optional SweetAlert2 for notifications.
 
-## Folder Structure
-```
-project-root/
-├── index.html    # UI structure
-├── script.js     # Game logic
-└── styles.css    # Optional custom styles
-```
-
-## Steps
-1. **Setup**:
-   - Create `index.html` with TailwindCSS.
-   - Add UI for stats and buttons (Feed, Play, Sleep).
-2. **Game Logic**:
-   - Manage stats and actions in `script.js`.
-   - Implement time-based decay and Game Over logic.
-3. **Styling**:
-   - Use TailwindCSS for layout and progress bars.
-
+## This is how your project will look like
+![Demo Image](image.png)
