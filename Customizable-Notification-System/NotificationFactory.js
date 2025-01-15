@@ -1,7 +1,7 @@
 export const NotificationType = Object.freeze = ({
-    SUCCESS: 'SUCCESS',
-    ERROR: 'ERROR',
-    WARNING: 'WARNING',
+    SUCCESS: 'success',
+    ERROR: 'error',
+    WARNING: 'warning',
 })
 
 export class Notification{
