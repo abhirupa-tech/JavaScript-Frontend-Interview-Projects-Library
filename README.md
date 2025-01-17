@@ -11,7 +11,7 @@ PS. I am using Tailwind CSS for all projects, to reduce effort in styling, and a
 - [Advanced Countdown Timer](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Advanced-Countdown-Timer)
 - [Tamagotchi](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Tamagotchi) 
 - [Interactive-Kanban-Board](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Interactive-Kanban-Board) 
-- [Customized Notification System] - In Progress
+- [Customized Notification System](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Customizable-Notification-System)
 - [Typing Speed Test] - In Progress
 - [Recipe Generator] - In Progress
 

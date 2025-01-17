@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="./Script.js" defer></script>
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center justify-center h-screen">
+
+  <div class="bg-white p-12 rounded-lg shadow-lg w-full max-w-3xl">
+    <h1 class="text-3xl font-bold mb-6 text-left">How fast can you type?</h1>
+    <div id="words" class="flex flex-wrap">     
+    </div>    
+  </div>
+  
+  <div id="scorecard" class="bg-white p-5 m-2 rounded-lg shadow-lg w-full flex flex-row max-w-3xl border-2 border-green-500">
+    <div id="accuracy" class="text-gray-700 mx-5">Accuracy: 0%</div>
+    <div id="time" class="text-gray-700">Time: 0s</div>
+  </div>
+
+</body>
+</html>
