@@ -12,13 +12,13 @@ PS. I am using Tailwind CSS for all projects, to reduce effort in styling, and a
 - [Tamagotchi](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Tamagotchi) 
 - [Interactive-Kanban-Board](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Interactive-Kanban-Board) 
 - [Customized Notification System](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Customizable-Notification-System)
-- [Typing Speed Test] - In Progress
+- [Typing Speed Test](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Typing-Speed-Test)
+- [Pop Quiz with Hints and a Scoring System](https://github.com/abhirupa-tech/JavaScript-Frontend-Interview-Projects-Library/tree/main/Pop-Quiz-With-Hints)
 - [Recipe Generator] - In Progress
+- [Kawaii Cat Fact Generator] - In Progress
 
 ### Upcoming Projects
 - Food Personality
-- Custom Notification System
-- Typing Speed Test
 - Build your own Pasta
 - Guess the Place (Quiz Game)
 - Maze Runner
